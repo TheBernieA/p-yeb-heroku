@@ -1,0 +1,19 @@
+<header>
+  <nav>
+    <div class="logo" routerLink="/landing">P-Yeboah</div>
+    <ul class="nav-links">
+      <li [ngClass]="{ 'active': home.isActive }">
+        <a routerLink="shop/home" routerLinkActive #home="routerLinkActive">Home</a>
+      </li>
+      <li [ngClass]="{'active': aboutUs.isActive}">
+        <a routerLink="shop/about-us" routerLinkActive="" #aboutUs="routerLinkActive">About Us</a>
+      </li>
+      <li [ngClass]="{'active': contactUs.isActive}">
+        <a routerLink="shop/contact-us" routerLinkActive="" #contactUs="routerLinkActive">Contact Us</a>
+      </li>
+    </ul>
+    <ul class="actions">
+      <li><input type="search" title="search page" placeholder="search"></li>
+    </ul>
+  </nav>
+</header>

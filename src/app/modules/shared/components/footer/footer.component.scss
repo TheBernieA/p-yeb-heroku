@@ -1,0 +1,51 @@
+footer {
+  position: relative;
+  width: 100%;
+  background: #2f2e2e;
+
+  .footer-context-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 2rem 1rem 1rem 1rem;
+    .call_us {
+      .tel {
+        text-decoration: none;
+        color: unset;
+      }
+    }
+    .email_us {
+      .mailto {
+        text-decoration: none;
+        color: unset;
+      }
+    }
+    .opening_hours {
+      ol{
+        padding: unset;
+        list-style: none;
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 0;
+      gap: 0.6rem;
+      li {
+        font-size: 0.9rem;
+        span {
+          margin-left: 0.5rem;
+          letter-spacing: 0.04rem;
+        }
+      }
+    }
+    .footer_headers {
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+  }
+}
